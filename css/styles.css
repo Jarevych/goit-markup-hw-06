@@ -780,5 +780,6 @@ h2 {
     background-image: url(../images/check.svg);
     background-repeat: no-repeat;
     background-position: center;
+    border:1.25px solid #4D5AE5 ;
 }
 
