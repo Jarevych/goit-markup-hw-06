@@ -707,7 +707,7 @@ h2 {
     width: 16px;
     height: 16px;
 }
-.form-label a {
+.checkbox-text a {
     color: #4D5AE5;
     letter-spacing: 0.04em;
 }
@@ -772,14 +772,13 @@ h2 {
     cursor: pointer;
     border-radius: 2px;
     content: '';
-    /* background-color: #4D5AE5;
-    background-image: url(../images/check.svg);
-    background-repeat: no-repeat;
-    background-position: center; */
+    margin-right: 8px;
     
 }
 .form-checkbox:checked + .checkbox-text::before {
     background-color: #4D5AE5;
     background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
