@@ -693,20 +693,20 @@ h2 {
 .form-label {
     letter-spacing: 0.04em;
 }
-/* .checkbox-text {
+.checkbox-text {
     display: flex;
     align-items: center;
     margin-top: 8px;
     margin: 0;
-} */
-/* .checkbox {
+}
+.checkbox {
     visibility: hidden;
     opacity: 0;
     margin: 0;
     margin-right: 8px;
     width: 16px;
     height: 16px;
-} */
+}
 .form-label a {
     color: #4D5AE5;
     letter-spacing: 0.04em;
@@ -765,23 +765,21 @@ h2 {
     left: 19px;
 }
 .checkbox-text::before {
-    display: flex;
+    display: block;
     width: 16px;
     height: 16px;
     border: 1.25px solid #2E2F42;
     cursor: pointer;
     border-radius: 2px;
     content: '';
-    /* background-color: #4D5AE5; */
-    /* background-image: url(../images/check.svg), linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    /* background-color: #4D5AE5;
+    background-image: url(../images/check.svg);
     background-repeat: no-repeat;
-    background-size: 10px 8px;
-    background-position: center;
-     */
+    background-position: center; */
+    
 }
-.form-checkbox:checked {
+.form-checkbox:checked + .checkbox-text::before {
     background-color: #4D5AE5;
     background-image: url(../images/check.svg);
 }
 
-visually-hidden
