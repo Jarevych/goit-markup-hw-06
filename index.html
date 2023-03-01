@@ -339,16 +339,15 @@
         <div class="subscribe">
             <p class="footer-sm">Subscribe</p>
         <form>
-            <label class="subscribe-form" for="">
+            <div class="subscribe-form">
                 <input type="text" placeholder="E-mail" class="subscribe-input">
                 <button type="submit" class="subscribe-btn">Subscribe
                     <svg class="subscribe-icon">
                         <use href="./images/icons.svg#icon-message">
-        
                         </use>
                     </svg>
                 </button>
-            </label>
+            </div>
         </form>
         </div>
     </div>
@@ -363,7 +362,7 @@
                         <svg class="form-icons">
                             <use href="./images/icons.svg#icon-name"></use>
                         </svg>
-                        <input type="name" name="name-form" id="name-form" class="contact-form-input" name="username">
+                        <input type="text" name="name-form" id="name-form" class="contact-form-input">
                 </label>
                 <label for="tel-form" class="form-label">Phone
                         <svg class="form-icons">
@@ -375,10 +374,10 @@
                         <svg class="form-icons">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
-                    <input type="mail" name="mail-form" id="mail-form" class="contact-form-input">
+                    <input type="text" name="mail-form" id="mail-form" class="contact-form-input">
                 </label>
                 <label for="massage-form" class="form-label">Comment
-                    <textarea class="contact-form-message" placeholder="Text input"></textarea>
+                    <textarea class="contact-form-message" id="massage-form" placeholder="Text input"></textarea>
                 </label>
                 <input type="checkbox" class="form-checkbox visually-hidden" name="checkbox-form" id="checkbox-form"/>
                 <label for="checkbox-form" class="checkbox-text">I accept the terms and conditions of the &nbsp; <a href=""> Privacy Policy</a>
