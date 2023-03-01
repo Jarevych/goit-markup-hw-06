@@ -78,6 +78,20 @@ h2 {
 .address {
     margin: 0;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /*логотип хедера*/
 .logo {
     font-family: 'Raleway';
@@ -486,9 +500,9 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-        transition-property: background-color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -519,24 +533,60 @@ h2 {
     display: flex;
     flex-direction: column;
 }
+
+.subscribe {
+    margin-left: 80px;
+}
+
 .subscribe-form {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 24px;
 }
 .subscribe-input {
-    width: 264px;
-    height: 40px;
+    /* display: flex; */
+    padding: 0;
+    width: 246px;
+    height: 38px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    background: none;
+    outline: none;
+    padding-left: 16px;
+}
+.subscribe-input::placeholder {
+    /* padding-left: 16px; */
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
 }
 .subscribe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     fill: #F4F4FD;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4D5AE5;
     width: 165px;
     height: 40px;
+    border-radius: 4px;
+    border: none;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: var(--clr-link);
 }
 .subscribe-icon {
     width: 24px;
     height: 24px;
+    margin-left: 16px;
 }
 
 /* modal window */
@@ -643,15 +693,20 @@ h2 {
 .form-label {
     letter-spacing: 0.04em;
 }
-.checkbox-text {
+/* .checkbox-text {
     display: flex;
     align-items: center;
     margin-top: 8px;
     margin: 0;
-}
-.checkbox {
+} */
+/* .checkbox {
+    visibility: hidden;
+    opacity: 0;
     margin: 0;
-}
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+} */
 .form-label a {
     color: #4D5AE5;
     letter-spacing: 0.04em;
@@ -678,19 +733,24 @@ h2 {
 }
 .contact-form-message {
     width: 100%;
-    height: 118px;
+    max-width: 326px;
+    height: 100px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     color: rgba(117, 117, 117, 0.5);
     margin: 8px 0;
-    padding: 0;
-    /* padding: 8px 0 0 16px; */
+    padding: 8px 16px;
+    font-family: "Roboto";
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    outline-color: #4D5AE5;
 
 }
 .contact-form-message::placeholder {
     font-family: "Roboto";
-    padding: 8px;
+    /* padding: 8px; */
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -704,3 +764,24 @@ h2 {
     top: 22px;
     left: 19px;
 }
+.checkbox-text::before {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    cursor: pointer;
+    border-radius: 2px;
+    content: '';
+    /* background-color: #4D5AE5; */
+    /* background-image: url(../images/check.svg), linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    background-repeat: no-repeat;
+    background-size: 10px 8px;
+    background-position: center;
+     */
+}
+.form-checkbox:checked {
+    background-color: #4D5AE5;
+    background-image: url(../images/check.svg);
+}
+
+visually-hidden
