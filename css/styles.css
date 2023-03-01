@@ -519,6 +519,25 @@ h2 {
     display: flex;
     flex-direction: column;
 }
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+.subscribe-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+.subscribe-btn {
+    fill: #F4F4FD;
+    width: 165px;
+    height: 40px;
+}
+.subscribe-icon {
+    width: 24px;
+    height: 24px;
+}
 
 /* modal window */
 
@@ -575,4 +594,113 @@ h2 {
  {
     fill: #FFFFFF;
     background-color: #404BBF;
+}
+.modal {
+    text-align: center;
+}
+.modal-title {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2E2F42;
+    padding-top: 72px;
+    padding-bottom: 16px;
+}
+.contact-form {
+    width: 100%;
+    max-width: 358px;
+    padding: 0 24px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
+}
+.contact-form-input {
+    width: 100%;
+    max-width: 320px;
+    height: 38px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 0px; 
+    padding-left: 38px;
+    outline-color: #4D5AE5;
+    margin-top: 8px;
+}
+/* .contact-form-input:focus {
+    fill: currentColor;
+} */
+/* .form-label {
+    position: relative;  
+} */
+.form {
+    position: relative;
+    fill: #2E2F42;
+}
+.form:focus-within {
+    fill: #4D5AE5;
+}
+.form-label {
+    letter-spacing: 0.04em;
+}
+.checkbox-text {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin: 0;
+}
+.checkbox {
+    margin: 0;
+}
+.form-label a {
+    color: #4D5AE5;
+    letter-spacing: 0.04em;
+}
+.submit {
+    text-align: center;
+}
+.submit-btn {
+    width: 169px;
+    height: 56px;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 24px;
+}
+.submit-btn:hover,
+.submit-btn:focus {
+    background: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.contact-form-message {
+    width: 100%;
+    height: 118px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    color: rgba(117, 117, 117, 0.5);
+    margin: 8px 0;
+    padding: 0;
+    /* padding: 8px 0 0 16px; */
+
+}
+.contact-form-message::placeholder {
+    font-family: "Roboto";
+    padding: 8px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    margin-top: 12px;
+    
+}
+.form-icons {
+    width: 12px ;
+    height: 12px;
+    position: absolute;
+    top: 22px;
+    left: 19px;
 }
