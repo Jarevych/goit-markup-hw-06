@@ -362,24 +362,49 @@
                         <svg class="form-icons">
                             <use href="./images/icons.svg#icon-name"></use>
                         </svg>
-                        <input type="text" name="name-form" id="name-form" class="contact-form-input">
+                        <input type="text" 
+                        name="name-form" 
+                        id="name-form" 
+                        class="contact-form-input">
                 </label>
-                <label for="tel-form" class="form-label">Phone
+                <label for="tel-form" 
+                class="form-label">Phone
                         <svg class="form-icons">
                             <use href="./images/icons.svg#icon-tel"></use>
                         </svg>
-                    <input type="tel" name="tel-form" id="tel-form" class="contact-form-input">
+                    <input type="tel" 
+                    name="tel-form" 
+                    id="tel-form" 
+                    class="contact-form-input"
+                    placeholder="+38 063 111 11 11"
+                    pattern="^\+[0-9]{12}"
+                    required>
                 </label>
-                <label for="mail-form" class="form-label">E-mail
+                <label for="mail-form" 
+                class="form-label">E-mail
                         <svg class="form-icons">
                             <use href="./images/icons.svg#icon-mail"></use>
                         </svg>
-                    <input type="text" name="mail-form" id="mail-form" class="contact-form-input">
+                    <input type="text" 
+                    name="mail-form" 
+                    id="mail-form" 
+                    class="contact-form-input"
+                    minlength="3"
+                    maxlength="10">
                 </label>
-                <label for="massage-form" class="form-label">Comment
-                    <textarea class="contact-form-message" id="massage-form" placeholder="Text input"></textarea>
+                <label for="massage-form" 
+                class="form-label"
+                >Comment
+                    <textarea class="contact-form-message" 
+                    id="massage-form"
+                     placeholder="Text input">
+                    </textarea>
                 </label>
-                <input type="checkbox" class="form-checkbox visually-hidden" name="checkbox-form" id="checkbox-form"/>
+                <input type="checkbox" 
+                class="form-checkbox visually-hidden" 
+                name="checkbox-form" 
+                id="checkbox-form"
+                required/>
                 <label for="checkbox-form" class="checkbox-text">I accept the terms and conditions of the &nbsp; <a href=""> Privacy Policy</a>
                 </label>
             <div class="submit">
