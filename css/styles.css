@@ -724,12 +724,15 @@ h2 {
     margin-top: 13px;
 }
 .checkbox {
-    visibility: hidden;
+    position: absolute;
+    top: 480px;
+    left: 32px;
+    appearance: none;
     opacity: 0;
     margin: 0;
     margin-right: 8px;
-    width: 16px;
-    height: 16px;
+    width: 1px;
+    height: 1px;
 }
 .checkbox-text a {
     color: #4D5AE5;
@@ -750,6 +753,7 @@ h2 {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0.04em;
     padding: 0;
     margin-top: 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -805,7 +809,7 @@ h2 {
     margin-right: 8px;
     
 }
-.form-checkbox:checked + .checkbox-text::before {
+.checkbox:checked + .checkbox-text::before {
     background-color: #4D5AE5;
     background-image: url(../images/check.svg);
     background-repeat: no-repeat;
